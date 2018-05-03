@@ -14,7 +14,6 @@ kind: finish
   %>
 <% if @host.subnet.respond_to?(:dhcp_boot_mode?) -%>
 <%= snippet 'kickstart_networking_setup' %>
-echo "anand"
 service network restart
 <% end -%>
 
