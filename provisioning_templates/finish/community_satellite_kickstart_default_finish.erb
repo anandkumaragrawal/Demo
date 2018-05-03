@@ -8,6 +8,7 @@ oses:
 %>
 <% if @host.subnet.respond_to?(:dhcp_boot_mode?) -%>
 <%= snippet 'kickstart_networking_setup' %>
+echo "Test import for new line"
 echo "Anand"
 service network restart
 <% end -%>
